@@ -3925,7 +3925,7 @@ html {
 
                 <div class="hidden xl:block">
                     <figure class="p-6 max-w-xl">
-                        <img class="object-contain rounded-lg" src="https://cdn.shopify.com/s/files/1/0273/5416/9431/products/LuvForever06102101253.jpg?v=1634472376" alt="Main Image">
+                        <img class="object-contain rounded-lg" src="{{main_image}}" alt="Main Image">
                     </figure>
                     
                 </div>
@@ -3934,18 +3934,18 @@ html {
 
                     <div class="block xl:hidden">
                         <figure class="max-w-md">
-                            <img class="object-contain rounded-lg" src="https://cdn.shopify.com/s/files/1/0273/5416/9431/products/LuvForever06102101253.jpg?v=1634472376" alt="Main Image">
+                            <img class="object-contain rounded-lg" src="{{main_image}}" alt="Main Image">
                         </figure>
                         
                     </div>
 
                     <div class="p-4 uppercase">
                         <p class="text-sm font-extralight tracking-wider">
-                            luvforever
+                            {{vendor}}
                         </p>
     
                         <h2 class="font-normal text-2xl tracking-wider pb-3">
-                            LuvForever Green Sequin Flared Legs Evening Party V-Neck Jumpsuit Size(6-14)
+                            {{title}}
                         </h2>
 
                         <label for="size_chart_modal"
@@ -3972,7 +3972,7 @@ html {
 
                     <div class="pl-4 pr-4 pt-2 pb-2 bg-black text-white flex justify-center items-center">
                         <div class="item-price text-xl font-medium">
-                            &pound69.99
+                            &pound{{price | money}}
                         </div>
                         <div class="text-base p-3">
                             |
@@ -3986,22 +3986,7 @@ html {
 
                 
                     <article class="prose text-sm p-4">
-                        <p data-mce-fragment="1">We're breaking the barriers of what's possible when it comes to a jumpsuit. This product tells its own story, and is a true statement piece; something you can feel completely confident in. It's a piece of clothing that when worn becomes a powerful display of your qualities, and becomes a part of you, with sublime elegance and a sense of inner strength.<br></p>
-                        <p data-mce-fragment="1">The dazzling sequins are emphasised by the emerald green colour; the flared legs add style to your look. This is a real stunner, and something you've been looking for.</p>
-                        <ul data-mce-fragment="1">
-                            <li data-mce-fragment="1">Flared legs<br>
-                            </li>
-                            <li data-mce-fragment="1">V-Neck</li>
-                            <li data-mce-fragment="1">Sleeveless design<br>
-                            </li>
-                            <li data-mce-fragment="1">Dazzling emerald colour<br>
-                            </li>
-                            <li data-mce-fragment="1">Nice Stretchy material for body-hugging fit</li>
-                            <li data-mce-fragment="1">Length: 155cm-156cm</li>
-                            <li data-mce-fragment="1">Fabric composition: 95% Polyester, 5% Elastane</li>
-                            <li data-mce-fragment="1">Care: Dry Clean Recommended</li>
-                        </ul>
-                        <p><br></p>
+                        {{description}}
                     </article>
 
                     

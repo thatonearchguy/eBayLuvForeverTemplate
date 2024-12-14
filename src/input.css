@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Keyframes to handle animation */
+
+.headline-nav-bar {
+    height: 50px;
+    overflow: hidden;
+}
+
+.headline {
+    animation: rotateHeadlines 10s ease-in infinite; /* Adjust timing as needed */
+    opacity: 0; /* Hide by default */
+    font-size: 1em;
+    position: absolute;
+}
+
+/* Keyframes for rotation with pauses */
+@keyframes rotateHeadlines {
+    0% {
+      opacity: 0;
+      transform: translateY(100%); /* Start below the container */
+    }
+    10%, 40% {
+      opacity: 1;
+      transform: translateY(0); /* Visible and in position */
+    }
+    50%, 100% {
+      opacity: 0;
+      transform: translateY(-100%); /* Move above the container */
+    }
+  }
+
+/* Staggering the animation for each headline */
+.headline:nth-child(0) {
+    animation-delay: 0s;
+}
+
+.headline:nth-child(1) {
+    animation-delay: 5s; /* Half of the total animation duration */
+}
+  
